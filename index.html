@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, css, js" />
+    <meta name="description" content="Loja de produtos naturais." />
+    <meta name="author" content="Renato" />
+    <title>Mango Grocery Store</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/fonts/index.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <span>Mango Grocery Store</span>
+      <img
+        class="logo-mango"
+        src="assets/image/logo-mango.png"
+        alt="Logo Mango Store"
+        width="100"
+      />
+      <nav class="navigation">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section>
+        <form id="form" action="/">
+          <h1>Register Products</h1>
+          <div class="input-control">
+            <label for="item">Item</label>
+            <input id="item" type="text" placeholder="banana" required />
+          </div>
+          <div class="input-control">
+            <label for="price">Price</label>
+            <input id="price" type="text" placeholder="3,99" required />
+          </div>
+          <input class="btn-form" type="button" value="Save" />
+        </form>
+      </section>
+      <section>
+        <table>
+          <caption>
+            Natural Products
+          </caption>
+          <thead>
+            <tr class="t-head">
+              <th scope="col">Item</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Banana</th>
+              <td>&#36;&#32;3.99</td>
+            </tr>
+            <tr>
+              <th scope="row">Apple</th>
+              <td>&#36;&#32;2.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="t-head">
+              <th scope="row">Total</th>
+              <td>&#36;&#32;6.98</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

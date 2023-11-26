@@ -1,0 +1,158 @@
+html {
+  font-family: "Poppins", sans-serif;
+  background-color: #fcb316cc;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+header span {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.logo-mango {
+  width: 4rem;
+  cursor: pointer;
+}
+
+.logo-mango:hover {
+  transform: scale(1.2);
+}
+
+nav > a {
+  font-size: 1.4em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: blueviolet;
+
+  margin: 1rem;
+}
+
+nav > a:hover {
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  padding: 8rem 0;
+}
+
+.container section {
+  height: 0;
+}
+
+#form {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 2rem;
+  border-radius: 4px;
+  font-size: 1.2em;
+}
+
+#form h1 {
+  color: #222;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-control label {
+  font-weight: 700;
+}
+
+.input-control input {
+  display: block;
+  border: 2px solid #f0f0f0;
+  font-size: 1.2em;
+  padding: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+#form .btn-form {
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #91e598;
+}
+
+#form .btn-form:hover {
+  background-color: #72db7d;
+}
+
+table {
+  width: 100%;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  color: blueviolet;
+}
+
+caption {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+thead,
+tfoot > .t-head {
+  background-color: #72db7d;
+}
+
+th,
+td {
+  font-size: 1.4em;
+  text-align: left;
+  padding: 1rem 2rem;
+  border: 1px solid #888;
+}
+
+/* ABOUT */
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 22rem;
+}
+
+.container-about section {
+  padding-top: 4rem;
+}
+
+.container-about h1 {
+  margin-bottom: 4rem;
+  font-size: 3em;
+  color: #111;
+}
+
+.container-about p {
+  font-size: 1.6em;
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.container-about img {
+  width: 100%;
+  box-shadow: 2px 2px 6px #000;
+  border-radius: 4px;
+}
