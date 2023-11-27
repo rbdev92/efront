@@ -83,7 +83,7 @@ nav > a:hover {
   outline: none;
 }
 
-#form .btn-form {
+#form .button-form {
   padding: 1rem;
   width: 100%;
   margin-top: 1rem;
@@ -94,7 +94,7 @@ nav > a:hover {
   background-color: #91e598;
 }
 
-#form .btn-form:hover {
+#form .button-form:hover {
   background-color: #72db7d;
 }
 

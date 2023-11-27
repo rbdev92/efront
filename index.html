@@ -33,18 +33,18 @@
         <form id="form" action="/">
           <h1>Register Products</h1>
           <div class="input-control">
-            <label for="item">Item</label>
-            <input id="item" type="text" placeholder="banana" required />
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" />
           </div>
           <div class="input-control">
-            <label for="price">Price</label>
-            <input id="price" type="text" placeholder="3,99" required />
+            <label for="productValue">Product Value</label>
+            <input type="text" id="productValue" name="productValue" />
           </div>
-          <input class="btn-form" type="button" value="Save" />
+          <input type="submit" id="sumbitBtn" class="button-form" value="Save" />
         </form>
       </section>
       <section>
-        <table>
+        <table id="productTable">
           <caption>
             Natural Products
           </caption>
@@ -54,7 +54,7 @@
               <th scope="col">Price</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="productTableBody">
             <tr>
               <th scope="row">Banana</th>
               <td>&#36;&#32;3.99</td>
@@ -73,5 +73,8 @@
         </table>
       </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
