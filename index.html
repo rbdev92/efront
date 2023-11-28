@@ -6,14 +6,14 @@
     <meta name="keywords" content="html, css, js" />
     <meta name="description" content="Loja de produtos naturais." />
     <meta name="author" content="Renato" />
-    <title>Mango Grocery Store</title>
+    <title>Mango</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/fonts/index.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
     <header>
-      <span>Mango Grocery Store</span>
+      <span>Mango</span>
       <img
         class="logo-mango"
         src="assets/image/logo-mango.png"
@@ -30,46 +30,29 @@
 
     <main class="container">
       <section>
-        <form id="form" action="/">
+        <form class="form">
           <h1>Register Products</h1>
           <div class="input-control">
             <label for="productName">Product Name:</label>
-            <input type="text" id="productName" name="productName" />
+            <input type="text" id="productName" class="input-control" />
           </div>
           <div class="input-control">
-            <label for="productValue">Product Value</label>
-            <input type="text" id="productValue" name="productValue" />
+            <label for="productValue">Product Value:</label>
+            <input type="text" id="productValue" />
           </div>
-          <input type="submit" id="sumbitBtn" class="button-form" value="Save" />
+          <button type="button" id="submitButton" class="form-button">Add Product</button>
         </form>
       </section>
       <section>
         <table id="productTable">
-          <caption>
-            Natural Products
-          </caption>
           <thead>
-            <tr class="t-head">
-              <th scope="col">Item</th>
-              <th scope="col">Price</th>
+            <tr>
+              <th>Product Name</th>
+              <th>Product Value</th>
+              <th>Actions</th>
             </tr>
           </thead>
-          <tbody id="productTableBody">
-            <tr>
-              <th scope="row">Banana</th>
-              <td>&#36;&#32;3.99</td>
-            </tr>
-            <tr>
-              <th scope="row">Apple</th>
-              <td>&#36;&#32;2.99</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr class="t-head">
-              <th scope="row">Total</th>
-              <td>&#36;&#32;6.98</td>
-            </tr>
-          </tfoot>
+          <tbody id="tableBody"></tbody>
         </table>
       </section>
     </main>
