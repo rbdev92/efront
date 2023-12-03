@@ -13,19 +13,24 @@
   </head>
   <body>
     <header>
-      <span>Mango</span>
       <img
-        class="logo-mango"
+        class="logo"
         src="assets/image/logo-mango.png"
         alt="Logo Mango Store"
         width="100"
       />
       <nav class="navigation">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About Us</a>
-        <a href="#">Products</a>
-        <a href="#">Contact</a>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
     </header>
 
     <main class="container">
@@ -34,17 +39,32 @@
           <h1>Register Products</h1>
           <div class="input-control">
             <label for="productName">Product Name:</label>
-            <input type="text" id="productName" class="input-control" />
+            <input
+              type="text"
+              id="productName"
+              pattern="[A-Za-z0-9 ]+"
+              title="Only letters, numbers, and spaces allowed"
+            />
           </div>
           <div class="input-control">
             <label for="productValue">Product Value:</label>
-            <input type="text" id="productValue" />
+            <input
+              type="text"
+              id="productValue"
+              pattern="[A-Za-z0-9 ]+"
+              title="Only letters, numbers, and spaces allowed"
+            />
           </div>
-          <button type="button" id="submitButton" class="form-button">Add Product</button>
+          <button type="button" id="submitButton" class="form-button">
+            Add Product
+          </button>
         </form>
       </section>
       <section>
-        <table id="productTable">
+        <table>
+          <caption>
+            Natural Products
+          </caption>
           <thead>
             <tr>
               <th>Product Name</th>
@@ -53,6 +73,12 @@
             </tr>
           </thead>
           <tbody id="tableBody"></tbody>
+          <tfoot id="tableFoot">
+            <tr>
+              <th>Total</th>
+              <th colspan="2">&#36;</th>
+            </tr>
+          </tfoot>
         </table>
       </section>
     </main>

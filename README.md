@@ -24,4 +24,6 @@
 ***No desafio deverá contendo as seguintes especificações:***
 
 - [x] Utilize JavaScript para adicionar interatividade ao formulário de cadastro de produtos no projeto desenvolvido com HTML e CSS.
-- [ ] Os dados inseridos nos campos do formulário devem ser exibidos na tabela. Para alcançar isso, é possível utilizar o método getElementById em conjunto com a função onClick para capturar os dados digitados e, em seguida, empregar o innerHTML para incluí-los na tabela.
+- [x] Os dados inseridos nos campos do formulário devem ser exibidos na tabela. Para alcançar isso, é possível utilizar o método getElementById em conjunto com a função onClick para capturar os dados digitados e, em seguida, empregar o innerHTML para incluí-los na tabela.
+
+![]()
