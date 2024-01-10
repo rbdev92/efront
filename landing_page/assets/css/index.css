@@ -21,7 +21,7 @@
 body {
   background-color: var(--color_bg);
   color: var(--color_light);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 header {
@@ -51,7 +51,7 @@ header {
   border-radius: 4px;
   color: var(--color_light);
   font-weight: 600;
-  transition: .4s;
+  transition: all 0.5s ease;
 }
 
 .btn__buy:hover {
@@ -67,7 +67,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .section__content {
@@ -76,9 +76,10 @@ main {
 }
 
 .section__content h2 {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 46px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .section__content h3 {
@@ -99,7 +100,7 @@ main {
 form {
   width: 600px;
   height: auto;
-  margin-block: 40px;
+  margin-top: 40px;
 }
 
 .inputs {
@@ -137,18 +138,73 @@ label {
   justify-content: center;
   align-items: center;
   margin-top: 26px;
+
+  transition: all 0.5s ease;
 }
 
 .btn__send:hover {
-  background-color: var(--color_blue_hover);
+  background-color: var(--color_green);
 }
 
 footer {
   width: 100%;
   height: 60px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
+}
+
+/* MODAL */
+.modal__send {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #0c0c0c90;
+}
+
+.modal__content {
+  width: 800px;
+  height: 300px;
+  background-color: var(--color_dark);
+  border: 1px solid var(--color_gray);
+  border-radius: 4px;
+  color: var(--color_light);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__content p {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.btn__close {
+  background-color: var(--color_green);
+  color: var(--color_dark);
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 600px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26px;
+}
+
+.success {
+  color: var(--color_green);
+}
+
+.error {
+  color: var(--color_red); 
 }
