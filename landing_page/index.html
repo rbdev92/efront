@@ -17,8 +17,8 @@
     <!-- MODAL SUCCESS OR ERROR -->
     <dialog class="modal__send">
       <div class="modal__content">
-        <p>E-mail cadastrado com <span class="success">sucesso</span>.</p>
-        <p>E-mail <span class="error">não </span> cadastrado.</p>
+        <p class="success__message">E-mail cadastrado com <span class="success">sucesso</span>.</p>
+        <p class="error__message">E-mail <span class="error">não </span>cadastrado.</p>
         <button type="button" class="btn btn__close">Fechar</button>
       </div>
     </dialog>
@@ -40,7 +40,7 @@
         <form action="">
           <div class="inputs">
             <label for="input__name">Nome</label>
-            <input type="text" id="input__name" class="input__name" />
+            <input type="text" id="input__name" class="input__name" autofocus/>
           </div>
 
           <div class="inputs">
@@ -51,7 +51,7 @@
           <div class="buttons">
             <button type="submit" class="btn btn__send">Enviar</button>
           </div>
-        </form>
+          </form>
       </section>
     </main>
 

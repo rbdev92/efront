@@ -206,5 +206,13 @@ footer {
 }
 
 .error {
-  color: var(--color_red); 
+  color: var(--color_red);
+}
+
+.btn .success__message {
+  background-color: var(--color_green);
+}
+
+.btn .error__message {
+  background-color: var(--color_red);
 }
